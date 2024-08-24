@@ -1,21 +1,21 @@
- #include<stdio.h>
+#include<stdio.h>
 int n,queue[15];
 int front =-1;
 int rear=-1;
 void enqueue(int x)
 {
-if(rear==n-1)
-	printf("Overflow\n");
-else if(front==-1 && rear==-1)
-{
-	front=rear=0;
-	queue[rear]=x;
-}
-else
-{
-	rear++;
-	queue[rear]=x;
-}
+ if(rear==n-1)
+     printf("Overflow\n");
+ else if(front==-1 && rear==-1)
+ {
+	 front=rear=0;
+	 queue[rear]=x;
+ }
+ else
+ {
+	 rear++;
+	 queue[rear]=x;
+ }
 }
 void dequeue()
 {
