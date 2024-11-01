@@ -1,0 +1,54 @@
+#include<stdio.h>
+
+void main()
+
+{
+
+int a[10],i,n,x,r,l;
+
+ printf("enter the size of array:");
+
+ scanf("%d",&n);
+
+ printf("enter the elements in the array\n");
+
+ for(i=1;i<=n;i++)
+
+ {
+
+ scanf("%d",&a[i]);
+
+ }
+
+ printf("entered array:\n");
+
+ for(i=1;i<=n;i++)
+
+ {
+
+ printf("%d\t",a[i]);
+
+ }
+
+ printf("\nenter a node \n");
+
+ scanf("%d",&x);
+
+ if(x==1)
+
+ {
+
+ printf("\nentered node is the parent node \n value of node : %d \n",a[1]);
+
+}
+
+else
+
+{
+
+printf(" \nvalue of parent node : %d \nvalue of entered node : %d\n",a[1],a[x]);
+
+}
+
+printf("right sub tree of node : %d \nleft sub tree of node : %d ", a[(2*x)+1],a[(2*x)]);
+}
